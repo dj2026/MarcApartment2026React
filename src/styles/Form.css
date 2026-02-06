@@ -1,0 +1,54 @@
+/* RESET & BODY */
+*,*::before,*::after{margin: 0; padding: 0; box-sizing: border-box;justify-content: center;}
+body{display: flex; width: 100%; height: 100%; background-image: url('./bck.jpg'); background-size: contain; z-index: -1;color: white;}
+.brand-header {display: flex; align-items: center; justify-content: center; gap: 40px; font-size: 4rem;margin-top: 40px;margin-bottom: 40px;}
+/* H1 GRADIENT = LOGO */
+.text-gradient {background: linear-gradient(180deg, #8122D2, #982EBC, #C34A8C, #DB5579); background-clip: text; -webkit-text-fill-color: transparent; text-transform: uppercase; letter-spacing: 10px;}
+
+/* FORM */
+.dashboard-container{width:100%;max-width:1100px;margin:1rem;text-align:center;}
+.card2,.table-card{padding:1rem;border-radius:20px;margin-bottom:1rem;box-shadow:0 10px 30px rgba(0,0,0,0.3);overflow:hidden;border:1px solid #e2e8f0;}
+.form-grid-inputs{display:grid;grid-template-columns:0.5fr 0.5fr;gap:0.5rem;text-align:left;}
+.form-group label{display:block;font-weight:bolder;margin-bottom:0.3rem;}
+input{width:100%;padding:0.6rem;border:2px solid black;border-radius:8px;box-sizing:border-box;background:#eee;color:black;font-weight:bolder;font-size:18px;}
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0;}
+.button-row{display:flex;justify-content:center;gap:1rem;margin-top:1.5rem;font-size: 20px;}
+.btn{padding:0.7rem 1.5rem;border-radius:8px;border:none;font-weight:bolder;cursor:pointer;transition:0.2s;}
+.btn:hover{transform:translateY(-10px);filter:brightness(1.1);color:white;}
+.btn-create{background:#22c55e;}.btn-update{background:#3b82f6;}.btn-delete{background:#ef4444;}.btn-reload{background:#ff9900;}
+
+/* TAULA */
+.modern-table{width:100%;min-width: 1000px;border-collapse:collapse;border-spacing:0;border-radius: 20px;table-layout: auto;}
+.modern-table th{padding:0.5rem;color:white;text-transform:uppercase;letter-spacing:1px;border-bottom:3px solid #ff0000;}
+
+/* TEXT GRIS */
+.modern-table th:nth-child(1){border-top-left-radius: 20px;font-size:20px;color: white;}
+.modern-table th:nth-child(4){border-top-right-radius: 20px;font-size:20px;color: white;}
+.modern-table td{cursor: pointer;padding: 20px; vertical-align:center; color:black; font-weight:bolder; text-align:center; color: white;}
+.modern-table td:nth-child(2){font-size:18px;color: white;}
+.modern-table td:nth-child(3){font-size:18px;color: white;}
+.id-badge{background:#ffffff;padding:0.2rem 0.2rem;border-radius:6px;font-size: 20px;color: black;}
+
+/* ALERTS CUSTOMS */ .swal-custom-popup {background-color: #7c7c7c !important; color: #ffffff !important; border-radius: 15px;}
+/* Color del títol i text */ .swal-custom-title, .swal-custom-html {color: #ffffff !important;}
+/* Botons personalitzats */ .btn-confirm {padding: 10px 25px !important; font-weight: bold !important;}
+/* Botó Confirmar */ .my-swal-confirm {background-color: #4f46e5 !important; color: white; padding: 10px 20px; border: none; border-radius: 5px; margin: 5px; cursor: pointer;}
+/* Botó d'esborrar */ .swal2-icon-warning ~ .swal2-actions .my-swal-confirm {background-color: #d33 !important;}
+/* Botó Cancel·lar */ .my-swal-cancel {background-color: #3d65b4 !important; color: white; padding: 10px 20px; border: none; border-radius: 5px; margin: 5px; cursor: pointer;}
+/* Popups */ .my-swal-popup {font-weight:bolder;background-color: #727272 !important; color: white !important; border-radius: 15px;}
+/* Icones */ .swal2-icon.swal2-warning {border-color: #ffcc00 !important; color: #ffcc00 !important;} .swal2-icon.swal2-success { border-color: #a5dc86 !important; color: #a5dc86 !important; }
+/* Estils icones */ .swal-icon-success {border-color: #a5dc86 !important; color: #a5dc86 !important;} .swal-icon-warning {border-color: #ffcc00 !important; color: #ffcc00 !important;} .swal-icon-error{border-color: #f27474 !important; color: #f27474 !important;} .swal-icon-info{border-color: #3fc3ee !important; color: #3fc3ee !important;}
+
+h1.review{
+    font-size: 20px;
+    color:white;
+    margin: 0;
+}
+
+.table-card {
+  max-height: 500px; /* Alçada màxima abans de fer scroll */
+  overflow-y: auto;  /* Scroll vertical */
+  overflow-x: auto;  /* Scroll horitzontal per si la taula és molt ampla en mòbils */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}

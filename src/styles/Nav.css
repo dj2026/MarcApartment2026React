@@ -1,0 +1,25 @@
+.toggle-menu-btn { position: fixed; top: 50px; right: 70px; z-index: 9999; width: 80px; height: 80px; background: rgba(255, 255, 255, 0.3); border: none; border-radius: 15px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: 0.3s; color: white; }
+.toggle-menu-btn:hover { background: rgba(255, 255, 255, 0.5); transform: scale(1.05); }
+.sidebar { position: fixed; top: 0; right: -320px; width: 270px; height: 100vh; background: rgba(0, 0, 0, 0.4); color: white; z-index: 1000; padding: 150px 30px; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); transition: right 0.4s ease; }
+.sidebar.open { right: 0; }
+.sidebar ul { list-style: none; padding: 0; }
+.sidebar ul li { display: flex; align-items: center; gap: 15px; padding: 15px 0; font-size: 1.3rem; border-bottom: 1px solid rgba(255, 255, 255, 0.2); cursor: pointer; opacity: 0; transform: translateX(20px); transition: 0.3s; }
+.sidebar.open ul li { opacity: 1; transform: translateX(0); }
+.sidebar ul li:hover { color: #00d4ff; padding-left: 10px; }
+.sidebar ul li svg { color: inherit; }
+h1 { color: white; text-align: center; margin-top: -150px; font-size: 60px; }
+.footer {
+  position: fixed;        /* fijo en la pantalla */
+  bottom: 0;              /* abajo */
+  left: 0;                /* al borde izquierdo */
+  width: 100vw;           /* ancho completo del monitor */
+  background: rgba(0, 0, 0, 0.856);
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 10px 0;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}

@@ -1,0 +1,21 @@
+*,*::before,*::after {margin: 0; padding: 0; box-sizing: border-box;} 
+
+/* CADA APARTMENT EN 1 CARD */
+.apartment-card {
+  border-radius: 20px;
+  padding: 1rem;
+  margin-top: -350px;
+  margin-bottom: 10px;
+  background: #fff;
+  color: black;
+}
+/* CONTINGUT CARD */
+.apartment-cards-container{
+  display: grid;
+  width: 950px;
+  gap:30px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 300px;
+}
+
+ul li {list-style: none;}
