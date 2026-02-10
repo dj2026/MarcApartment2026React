@@ -7,7 +7,7 @@ Aquesta és una aplicació de gestió d'apartaments desenvolupada amb **Springbo
 - ApartmentListView<br>
 - Apartment Form + CRUD conectada amb h2<br>
 - Data.js<br>
-- (FALTA LA PART DE SPRINGBOOT) proximament....
+- (FALTA LA PART DE SPRINGBOOT) proximament....<br>
 **Llibreries**: <br>
 - Sweetalert2<br>
 - React-query<br>
@@ -177,3 +177,4 @@ Un cop el backend està executant-se, pots verificar que l'API respon correctame
 ## 👥 Autor
 
 PINTAPART | Desenvolupat per **Marc Monfort** - PRA01 d'Arquitectura de Software / Desenvolupament Web. 04/02/2026
+
