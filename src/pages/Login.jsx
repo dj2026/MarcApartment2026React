@@ -5,8 +5,8 @@ import { useAuth } from '../context/AuthContext';
 export default function Login({ onEnterAsVisitor, onAdminSuccess }) {
   const { login, loading, error } = useAuth();
   const [showForm, setShowForm] = useState(false);
-  const [username, setUsername] = useState('marc'); 
-  const [password, setPassword] = useState('Pintapart2026!');
+  const [username, setUsername] = useState(''); 
+  const [password, setPassword] = useState('');
 
   const handleAdminLogin = async (e) => {
     e.preventDefault();
